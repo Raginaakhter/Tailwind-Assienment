@@ -25,50 +25,69 @@
 
 </head>
 <body class="bg-[#000000] font-poppings ">
-  <nav class="flex justify-between items-center p-5">
-    <!-- logo start -->
-   <div>
-     <div class="flex flex-1 items-center gap-2">
-     <div> <img src="Group 10.png" alt=""></div>
-     <div class="text-2xl font-bold text-[#f87c4e]"> Bodyshape</div>
-
-     <div> <img src="Group 11.png" alt=""></div>
+<section class="max-w-[1400px] mx-auto pt-4">
+ <nav class="bg-black text-white">
+  <div class="max-w-7xl mx-auto flex justify-between items-center h-20 px-6 lg:px-10">
+    <!-- 🔹 Start Section (Logo) -->
+    <div class="flex items-center gap-3">
+      <img src="Group 10.png" alt="" class="w-8 h-8" />
+      <div class="flex flex-col">
+        <p class="text-2xl tracking-wider bg-gradient-to-r from-[#FF921B80] to-[#F66844] bg-clip-text text-transparent font-bold">
+          Bodyshape
+        </p>
+        <p class="text-xs tracking-wider bg-gradient-to-r from-[#FF921B80] to-[#F66844] bg-clip-text text-transparent">
+          Unleash your inner athlete
+        </p>
+      </div>
+      <img src="Group 11.png" alt="" class="w-8 h-8" />
     </div>
-    <p class="text-[#f87c4e]">unleash your inner athete</p>
-   </div>
-   
-    <!-- menu start -->
-     <div class="hidden w-full md:flex md:w-auto ">
 
-        <ul class="flex gap-10 text-white text-sm font-semibold font-sans">
-            <li><a href="#" class=" hover:border-b-2 hover:border-[#f87c4e]">Home</a></li>
-          
-            <li><a href="#" class=" hover:border-b-2 hover:border-[#f87c4e]" >About</a></li>
-            <li><a href="#" class=" hover:border-b-2 hover:border-[#f87c4e]" >Service</a></li>
-            <li><a href="#" class=" hover:border-b-2 hover:border-[#f87c4e]" >Pricing</a></li>
-            <li><a href="#" class=" hover:border-b-2 hover:border-[#f87c4e]" >Contact</a></li>
-            <button class="bg-gradient-to-r from-orange-500 to-red-500 text-white py-2 px-3 rounded">join us</button>
-        </ul>
+    <!-- 🔹 Hidden Checkbox for Toggle -->
+    <input type="checkbox" id="menu-toggle" class="peer hidden" />
 
+    <!-- 🔹 Hamburger Icon (visible on mobile) -->
+    <label for="menu-toggle" class="md:hidden cursor-pointer">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
+        viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16m0 6H4" />
+      </svg>
+    </label>
 
-     </div>
-        <!-- menu end -->
-  </nav>
+    <!-- 🔹 Middle + End Section (Menu + Button) -->
+    <div
+      class="absolute top-20 left-0 w-full bg-black border-t border-gray-700 flex-col items-center gap-4 py-4 hidden peer-checked:flex md:peer-checked:flex md:flex-row md:static md:w-auto md:border-none md:bg-transparent md:gap-6 md:py-0 md:flex">
+      <ul class="flex flex-col md:flex-row items-center gap-4 md:gap-6 text-sm font-semibold font-roboto">
+        <li><a href="#" class="hover:border-b-2 hover:border-[#f87c4e]">Home</a></li>
+        <li><a href="#" class="hover:border-b-2 hover:border-[#f87c4e]">About</a></li>
+        <li><a href="#" class="hover:border-b-2 hover:border-[#f87c4e]">Service</a></li>
+        <li><a href="#" class="hover:border-b-2 hover:border-[#f87c4e]">Pricing</a></li>
+        <li><a href="#" class="hover:border-b-2 hover:border-[#f87c4e]">Contact</a></li>
+      </ul>
+
+      <button
+        class="bg-gradient-to-r from-orange-500 to-red-500 text-white py-2 px-4 rounded font-semibold hover:opacity-90 transition">
+        Join Us
+      </button>
+    </div>
+  </div>
+</nav>
+
 
 <!-- hero section start -->
-<section class="flex flex-col-reverse md:flex-row justify-between p-10">
-  <div class="md:max-w-full">
+<section class="flex relative justify-center lg:justify-start h-fit">
+  <div class="absolute z-20 lg:top-36 top-16">
     <h1 class="text-5xl font-bold text-[#f5f5f5] ">Transform <br> Your Body</h1> 
     <p class="text-lg text-white mt-4">Join our fitness community and achieve your goals your goals.</p> <br> <br>
   <div class="flex gap-4">
       <button class="bg-gradient-to-r from-orange-500 to-red-500 text-white py-2 px-4 rounded mt-4">Get Started</button>
-      <button class="border-[#FF921B] border-1 text-white py-2 px-2 rounded mt-4 flex-1 flex items-center gap-1"><img src="play_circle.png" alt=""><span>Watch Review</span> <div class="e">
-        
-      </div>
-      </button>
+    <button class="border border-[#FF921B] text-white py-2 px-3 rounded mt-4 flex items-center gap-1 w-fit">
+  <img src="play_circle.png" alt="">
+  <span>Watch Review</span>
+</button>
   </div>
   </div>
-  <div class="md:max-w-full  ">
+  <div class="relative  ">
     <img src="banner.png" alt="Hero Image" class="w-full h-auto">
   </div>
 </section>
